@@ -32,9 +32,11 @@ const UpcomingFilms = () => {
 
     return (
         <>
-        <h1>Upcoming Films</h1>
+        <h2>Upcoming Films Releases for UK</h2>
+        <hr class= "horizontal-line"/>
         <FilmList allFilms = {allFilms}/>
-        <button onClick={() => window.open('https://www.imdb.com/calendar/?region=gb')}> View more upcoming releases >> </button>
+        <hr class= "horizontal-line"/>
+        <button class="button" onClick={() => window.open('https://www.imdb.com/calendar/?region=gb')}> View more upcoming releases >> </button>
         </>
     )
 

@@ -5,9 +5,8 @@ const Film = ({name, url}) => {
 
     return (
         <>
-        {/* <h1>{name}</h1> */}
             <li>
-                <a href={url}>{name}</a>
+                <a className="link" href={url}>{name}</a>
             </li>
         </>
     )
