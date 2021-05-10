@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.css';
+import UpcomingFilms from './containers/UpcomingFilms';
 
 function App() {
 
   return (
-    <h1>this is the header </h1>
+    <UpcomingFilms/>
   );
-}
+};
 
 export default App;

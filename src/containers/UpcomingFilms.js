@@ -1,9 +1,9 @@
-import React, {useState}  from 'react';
+import React  from 'react';
+import FilmList from '../components/FilmList'
 
 const UpcomingFilms = () => {
 
-    const [allFilms, SetAllFilms] = useState(
-        [
+    const allFilms = [
             {
                 id: 1,
                 name: "Spider-Man: Into the Spider-Verse",
@@ -28,20 +28,15 @@ const UpcomingFilms = () => {
                 name: "Captain Marvel",
                 url: "https://www.imdb.com/title/tt4154664/?ref_=rlm"
             }
-        ]
-
-
-    );
+        ];
 
     return (
         <>
-        {/* content goes here */}
         <h1>Upcoming Films</h1>
         <FilmList allFilms = {allFilms}/>
+        <button onClick={() => window.open('https://www.imdb.com/calendar/?region=gb')}> View more upcoming releases >> </button>
         </>
     )
-
-
 
 };
 
